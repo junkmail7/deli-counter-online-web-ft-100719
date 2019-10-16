@@ -1,11 +1,15 @@
 def line(array)
   x=0
+  string=""
+  nustring=""
 if array.size != 0
-  puts "The line is currently:"
+  string = "The line is currently:"
 while x != array.size
-    puts " #{x}. #{array[x]}"
+    nustring=nustring + " #{x}. #{array[x]}"
     x=+1
 end
+string=string+nustring
+puts "#{string}"
 end
 if array.size == 0
   puts "The line is currently empty."
