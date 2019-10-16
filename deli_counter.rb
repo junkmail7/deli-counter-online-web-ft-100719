@@ -8,9 +8,12 @@ while x != array.size
     nustring=nustring + " #{x}. #{array[x]}"
     x=+1
 end
+
+end
+
 string=string+nustring
 puts "#{string}"
-end
+
 if array.size == 0
   puts "The line is currently empty."
 end
